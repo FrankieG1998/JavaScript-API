@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main_capi.js"></script>
+</head>
+<body>
+    <!--Start of Container For Movie Posters-->
+    <div class="container">
+        <div class="gallery"> 
+            <figure class="gallery__item gallery__item--1" id="129884" onclick="event.stopPropagation(); getImage(this.id, event)" >
+                <img class="gallery__img" src="images/monalisa.jpg" alt="Mona Lisa">
+             </figure> 
+            <figure class="gallery__item gallery__item--2" id="16231" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/GirlwithaPearlEarring.jpg" alt="Girl with a Pearl Earring">
+            </figure> 
+            <figure class="gallery__item gallery__item--3" id="76816" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/thestarrynight.jpg" alt="Starry Night">
+            </figure>
+            <figure class="gallery__item gallery__item--4" id="229351" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/thekiss.jpg" alt="The Kiss">
+            </figure>
+            <figure class="gallery__item gallery__item--5" id="97910" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/thebirthofvenus.jpg" alt="The Birth of Venus">
+            </figure>
+            <figure class="gallery__item gallery__item--6" id="102963" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/greyandblack.jpg" alt="Arrangement in Grey and Black No. 1">
+            </figure>
+        </div>
+        <div id="art_info" style="display: none;">
+        </br>
+            <div style="text-align: center;"><b>Information of The Selected Artwork</b></div>
+            <b>Art ID: </b><span id="art_id">129884</span></br>
+            <b>Art Title: </b><span id="art_title">Mona Lisa</span></br>
+            <b>Artist Title: </b><span id="artist_title">Da Vinci</span></br>
+            <b>Artwork Type Title: </b><span id="artwork_type_title">Painting</span></br>
+            <b>Department Title: </b><span id="department_title">Greatest Paintings of All Time</span></br>
+            <button onclick="hideArtWorkInfo();" > Hide Art Work Information </button> 
+        </div>
+    </div>
+    
+</body>
+</html>
